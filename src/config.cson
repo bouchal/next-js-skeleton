@@ -1,0 +1,22 @@
+production:
+	port: #{process.env.PORT}
+
+	next:
+		dev: false
+		quiet: true
+
+	envName: "production"
+
+	apiUriPrefix: "/api"
+
+development:
+	envName: "development"
+
+localhost:
+	port: #{process.env.PORT || 3000}
+
+	next:
+		dev: true
+		quiet: false
+
+	envName: "localhost"
