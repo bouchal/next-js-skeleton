@@ -24,7 +24,6 @@ app.prepare()
 		server.use(config.apiUriPrefix, apiRouterFactory());
 
 		server.use(requestHandler);
-		server.use(compression());
 
 		server.listen(PORT, (err) =>
 		{
